@@ -25,7 +25,7 @@ export default function AboutUsPage() {
       <section>
         <h2 className="text-3xl font-bold text-gray-200 mb-4">Our Values</h2>
         <ul className="list-disc list-inside text-gray-400 leading-relaxed space-y-2">
-          <li>Customer First: We prioritize our customers' needs and strive to exceed their expectations.</li>
+          <li>Customer First: We prioritize our customers needs and strive to exceed their expectations.</li>
           <li>Integrity: We conduct our business with honesty, transparency, and a strong moral compass.</li>
           <li>Innovation: We are constantly exploring new ways to improve our products and services.</li>
           <li>Sustainability: We are dedicated to making environmentally conscious choices in all our operations.</li>

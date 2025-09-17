@@ -17,7 +17,7 @@ export default function ProductListPage() {
         return res.json();
       })
       .then((data) => {
-        const transformedProducts = data.products.map((item: any) => ({
+        const transformedProducts = data.products.map((item: Product) => ({
           id: item.id,
           title: item.title,
           price: item.price,

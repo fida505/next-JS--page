@@ -6,7 +6,7 @@ export default function ContactUsPage() {
     <div className="bg-zinc-800 rounded-xl shadow-lg p-8 md:p-12 max-w-2xl mx-auto my-8">
       <h1 className="text-4xl font-bold text-center text-gray-100 mb-6">Contact Us</h1>
       <p className="text-lg text-gray-400 text-center mb-8">
-        Have a question, feedback, or a partnership inquiry? We'd love to hear from you. Please fill out the form below, and we'll get back to you as soon as possible.
+        Have a question, feedback, or a partnership inquiry? We.d love to hear from you. Please fill out the form below, and we ll get back to you as soon as possible.
       </p>
 
       <form className="space-y-6">

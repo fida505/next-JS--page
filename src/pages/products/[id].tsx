@@ -51,7 +51,7 @@ export default function ProductDetailPage() {
     return (
       <div className="text-center p-8">
         <h1 className="text-4xl font-bold text-gray-100">Product Not Found</h1>
-        <p className="mt-4 text-lg text-gray-400">The product you're looking for does not exist.</p>
+        <p className="mt-4 text-lg text-gray-400">The product you ,re looking for does not exist.</p>
       </div>
     );
   }
