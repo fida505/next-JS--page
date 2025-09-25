@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useCart } from '../lib/CartContext';
 import React from 'react';
+import Image from 'next/image';
 
 export default function CartPage() {
   const { cartItems, removeFromCart, updateQuantity, clearCart } = useCart();
@@ -25,7 +26,13 @@ export default function CartPage() {
         <div className="divide-y divide-gray-700">
           {cartItems.map((item) => (
             <div key={item.id} className="flex items-center py-4">
-              <img src={item.thumbnail} alt={item.title} className="w-20 h-20 object-cover rounded-md" />
+              <Image
+  src={item.thumbnail}
+  alt={item.title}
+  width={80}      
+  height={80}    
+  className="object-cover rounded-md"
+/>
               <div className="ml-4 flex-grow">
                 <h2 className="text-lg font-semibold text-gray-100">{item.title}</h2>
                 <p className="text-gray-400">${item.price.toFixed(2)}</p>

@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Head from 'next/head';
 import React from 'react';
+import "@/styles/globals.css"
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -11,7 +12,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>My E-Commerce App</title>
         <meta name="description" content="An example e-commerce application built with Next.js Pages Router" />
-        <script src="https://cdn.tailwindcss.com"></script>
+        {/* <script src="https://cdn.tailwindcss.com"></script>
+
         <style>{`
           @keyframes ping-once {
             0% {
@@ -30,7 +32,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           .animate-ping-once {
             animation: ping-once 1s cubic-bezier(0, 0, 0.2, 1) infinite;
           }
-        `}</style>
+        `}</style> */}
       </Head>
       <div className="bg-gray-900 text-gray-200 font-sans flex flex-col min-h-screen">
         <Navbar />

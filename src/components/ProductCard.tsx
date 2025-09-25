@@ -2,12 +2,19 @@ import Link from 'next/link';
 import { useCart } from '../lib/CartContext';
 import { Product } from '../lib/types';
 import React from 'react';
+import Image from "next/image";
 
 export default function ProductCard({ product }: { product: Product }) {
   const { addToCart } = useCart();
   return (
     <div className="bg-zinc-800 rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105">
-      <img src={product.thumbnail} alt={product.title} className="w-full h-48 object-cover" />
+      <Image
+  src={product.thumbnail}
+  alt={product.title}
+  width={500} 
+  height={192} 
+  className="w-full h-48 object-cover"
+/>
       <div className="p-6">
         <h3 className="text-xl font-semibold text-gray-100 mb-2">{product.title}</h3>
         <p className="text-gray-400 mb-4">${product.price.toFixed(2)}</p>

@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { useCart } from '../../lib/CartContext';
 import { Product } from '../../lib/types';
 import React from 'react';
+ import Image from 'next/image';
 
 export default function ProductDetailPage() {
   const router = useRouter();
@@ -58,11 +59,19 @@ export default function ProductDetailPage() {
 
   return (
     <div className="bg-zinc-800 rounded-xl shadow-lg p-8 md:p-12 flex flex-col md:flex-row gap-8 items-start">
-      <img
-        src={product.thumbnail}
-        alt={product.title}
-        className="w-full md:w-1/2 h-80 object-cover rounded-lg shadow-md"
-      />
+     
+
+<Image
+  src={product.thumbnail}
+  alt={product.title}
+  width={0} 
+  height={0} 
+  sizes="(min-width: 768px) 50vw, 100vw" 
+  style={{ objectFit: 'cover' }}
+  className="rounded-lg shadow-md"
+  fill
+/>
+
       <div className="flex-1">
         <h1 className="text-4xl font-bold text-gray-100 mb-4">{product.title}</h1>
         <p className="text-3xl font-semibold text-teal-400 mb-6">${product.price.toFixed(2)}</p>
